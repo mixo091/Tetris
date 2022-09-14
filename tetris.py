@@ -1,6 +1,5 @@
 from figure import Figure
-import pygame
-import random
+
 
 class Tetris:
     level = 2
