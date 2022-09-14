@@ -1,12 +1,16 @@
 import pygame, sys
 from pygame.locals import QUIT
+from tetris import Tetris
 
+# Initialize the game engine
 pygame.init()
-DISPLAYSURF = pygame.display.set_mode((400, 300))
-pygame.display.set_caption('Hello World!')
-while True:
-    for event in pygame.event.get():
-        if event.type == QUIT:
-            pygame.quit()
-            sys.exit()
-    pygame.display.update()
+
+# Define some colors
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+GRAY = (128, 128, 128)
+
+size = (400, 500)
+screen = pygame.display.set_mode(size)
+
+pygame.display.set_caption("Tetris")
